@@ -8,18 +8,8 @@ import teaImage from '../../assets/tea.png';
 import friesImage from '../../assets/fries.png';
 import colaImage from '../../assets/cola.png';
 
-type MenuItem = {
-    name: string;
-    price: number;
-    image: string;
-};
-
-type AddItemsPanelProps = {
-    addToOrder: (item: MenuItem) => void;
-};
-
-function AddItemsPanel({ addToOrder }: AddItemsPanelProps) {
-    const menuItems: MenuItem[] = [
+function AddItemsPanel({ addToOrder }: { addToOrder: (item: { name: string; price: number; image: string }) => void }) {
+    const menuItems: { name: string; price: number; image: string }[] = [
         { name: 'Hamburger', price: 80, image: hamburgerImage },
         { name: 'Coffee', price: 70, image: coffeeImage },
         { name: 'Cheeseburger', price: 90, image: cheeseburgerImage },

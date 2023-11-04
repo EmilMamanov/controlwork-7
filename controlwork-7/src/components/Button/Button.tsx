@@ -1,12 +1,4 @@
-
-
-type ButtonProps = {
-    text: string;
-    onClick: () => void;
-    className?: string;
-};
-
-function Button({ text, onClick, className }: ButtonProps) {
+function Button({ text, onClick, className }: { text: string; onClick: () => void; className?: string }) {
     return (
         <button className={className} onClick={onClick}>
             {text}
