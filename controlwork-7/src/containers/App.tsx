@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import OrderPanel from './components/OrderPanel/OrderPanel.tsx';
-import AddItemsPanel from './components/AddItemsPanel/AddItemsPanel.tsx';
+import OrderPanel from '../components/OrderPanel/OrderPanel.tsx';
+import AddItemsPanel from '../components/AddItemsPanel/AddItemsPanel.tsx';
 
 function App() {
     const [order, setOrder] = useState<{ [itemName: string]: number }>({});
