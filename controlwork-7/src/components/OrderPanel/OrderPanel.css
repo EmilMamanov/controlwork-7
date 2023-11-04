@@ -1,0 +1,9 @@
+.remove-btn {
+    background: darkred;
+}
+
+.OrderPanel {
+    background: cornflowerblue;
+    border-radius: 41px;
+    min-width: 280px;
+}

@@ -1,0 +1,37 @@
+.menu-item-image {
+    width: 30px;
+    height: 30px;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+ul {
+    padding: 0;
+    margin: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: wheat;
+    color: black;
+    border-radius: 15px;
+    padding: 5px 9px;
+}
+
+.add-to-order-btn {
+    background-color: green;
+    padding: 10px;
+}
+
+.AddItemsPanel {
+    background: darkseagreen;
+    border-radius: 40px;
+    margin-left: 15px;
+    min-width: 280px;
+}

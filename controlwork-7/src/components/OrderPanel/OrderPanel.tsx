@@ -1,4 +1,5 @@
 import './OrderPanel.css';
+import Button from '../Button/Button';
 
 function OrderPanel({ order, removeFromOrder }: { order: { [itemName: string]: number }; removeFromOrder: (itemName: string) => void }) {
     const menuItems = [
@@ -34,7 +35,7 @@ function OrderPanel({ order, removeFromOrder }: { order: { [itemName: string]: n
                             return (
                                 <li key={index}>
                                     {itemName} - {itemPrice * order[itemName]} KGS (x{order[itemName]})
-                                    <button onClick={() => removeFromOrder(itemName)} className="remove-btn">x</button>
+                                    <Button text="x" onClick={() => removeFromOrder(itemName)} className="remove-btn" />
                                 </li>
                             );
                         })}

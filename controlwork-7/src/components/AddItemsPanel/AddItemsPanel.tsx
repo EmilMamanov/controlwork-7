@@ -1,4 +1,5 @@
 import './AddItemsPanel.css';
+import Button from '../Button/Button';
 
 import hamburgerImage from '../../assets/hamburger.png';
 import coffeeImage from '../../assets/coffee.png';
@@ -35,7 +36,7 @@ function AddItemsPanel({ addToOrder }: AddItemsPanelProps) {
                     <li key={index}>
                         <img src={item.image} alt={item.name} />
                         {item.name} - {item.price} KGS
-                        <button onClick={() => addToOrder(item)} className="add-to-order-btn">+</button>
+                        <Button text="+" onClick={() => addToOrder(item)} className="add-to-order-btn" />
                     </li>
                 ))}
             </ul>
